@@ -6,7 +6,7 @@ import {StyleSheet, css} from 'aphrodite/no-important';
 
 var links = [{text: 'About Me', className: 'tednavlink', link: '/aboutme'},
              {text: 'Contact Me', className: 'tednavlink', link: '/contactme'},
-             {text: 'Work', className: 'tednavlink', link: '/work'},
+             {text: 'Work', className: 'tednavlink', link: '/'},
              {text: 'Blog', className: 'tednavlink', link: '/blog'}
             ];
 
