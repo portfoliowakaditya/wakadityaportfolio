@@ -32,7 +32,7 @@ module.exports = {
     extensions: ['*', '.js', '.jsx']
   },
   output: {
-    path: __dirname + 'examples/src',
+    path: __dirname + '/examples/src',
     filename: 'bundle.js'
   },
   plugins: [
