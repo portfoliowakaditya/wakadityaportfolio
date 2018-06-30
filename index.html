@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      
+      
+      <title>not the</title>
+
+      
+      <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+      
+      
+
+      <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans" />
+      <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+      
+      
+      
+<script src="https://www.gstatic.com/firebasejs/5.0.3/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyAHr4mh0g_mkceXUJfuutKj-_r3WEEmDpU",
+    authDomain: "portfolio-d7bcd.firebaseapp.com",
+    databaseURL: "https://portfolio-d7bcd.firebaseio.com",
+    projectId: "portfolio-d7bcd",
+    storageBucket: "",
+    messagingSenderId: "797848868906"
+  };
+  firebase.initializeApp(config);
+</script>
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/react/<react-version>/react.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react/<react-version>/react-dom.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react-bootstrap/<version>/react-bootstrap.min.js"></script>
+      
+      
+<style>
+    @font-face { font-family: Avenir; src: url('resources/fonts/Avenir-Medium.ttf'); }
+@font-face { font-family: AvenirBlack; src: url('resources/fonts/AvenirBlack.otf'); } 
+@font-face { font-family: Futura; src: url('resources/fonts/Futura.ttf'); } 
+
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+      -ms-box-sizing: border-box;
+          box-sizing: border-box;
+}
+ 
+.pic {
+  vertical-align: middle;
+  border: 1px #ffffff;
+  align-content: left;
+  overflow: hidden;
+  text-align: center;
+  -webkit-box-shadow: 5px 5px 5px #111;
+          box-shadow: 5px 5px 5px #111;  
+}
+     
+.morph {
+height: 100%;
+width: 100%;
+       border-radius: 50%;
+  -webkit-transition: all 0.5s ease;
+     -moz-transition: all 0.5s ease;
+       -o-transition: all 0.5s ease;
+      -ms-transition: all 0.5s ease;
+          transition: all 0.5s ease;
+}
+    .morph:hover {
+  height: 100%;
+width: 100%;
+  -webkit-transform: rotate(360deg);
+     -moz-transform: rotate(360deg);
+       -o-transform: rotate(360deg);
+      -ms-transform: rotate(360deg);
+          transform: rotate(360deg);
+    border-radius: 50%;
+
+}
+    
+        @media
+        only screen and (max-width: 1080px){
+            .morph{
+              height: 55%;
+  width: 55%;   
+            }
+             .morph:hover{
+              height: 52%;
+  width: 52%;   
+            }
+            
+            
+    }
+ 
+
+    
+    
+/** TODO:
+    Add Media Queries for navbar resize **/
+/** Need CSS Selector or pass value in **/
+    </style>
+  </head>
+    
+  <body style='background-color: #ffffff; padding: 0; margin: 0; max-width: 100%; overflow-x: hidden;'>
+      <font face = "Raleway, sans-serif">
+    <div id="app"></div>
+    <script src="./bundle.js"></script>
+      </font>
+  </body>
+</html>
