@@ -28,9 +28,9 @@ class App extends React.Component {
 			<HashRouter>
 				<Switch>
 					
-                    <Route exact path='/aboutme' component={ Aboutme }/>
+                    <Route path='/aboutme' component={ Aboutme }/>
                     <Route path='/contactme' component={Contactme}/>
-                    <Route path='/work' component={Work}/>
+                    <Route exact path='/' component={Work}/>
                     <Route path='/blog' component={myblog}/>
                     
                 </Switch>
