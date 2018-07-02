@@ -9,10 +9,12 @@ export class Portfoot extends React.Component {
             <footer className={css(styles.ftr)} bsClass = "container fluid">
         
                 Designed and Developed <font color = "#eafc40">from scratch!</font> by Aditya Wakade<br/>
-                Icon credits: Flaticon | Smashicons | Bogdan Rosu<br/>
+                Icon credits: Flaticon | Smashicons | Bogdan Rosu
+                <br/>
                 <a href="https://www.facebook.com/aditya.wakade.507"> <img className = {css(styles.footphoto)} src={require('../resources/footer/fb.png')} /> </a>
                 <a href="https://www.linkedin.com/in/wakaditya/"> <img className = {css(styles.footphoto)} src={require('../resources/footer/lnd.png')} /> </a>
-                <a href="https://github.com/wakaditya"> <img className = {css(styles.footphoto)} src={require('../resources/footer/github.png')} /> </a>
+                
+                <a href="https://github.com/wakaditya"> <img className = {css(styles.footphoto)} src={require('../resources/footer/github.png')}/> </a>
                 
                
             </footer>
@@ -32,11 +34,18 @@ const styles = StyleSheet.create({
         paddingTop: '1%',
         paddingBottom: '1%',
         color: 'white',
-        fontFamily: 'Raleway, sans-serif'
+        fontFamily: 'Raleway, sans-serif',
+        '@media only screen and (max-width: 1300px)': {
+            fontSize: '2.7rem'
+        }
     },
     footphoto: {
         paddingTop: '0.5%',
         width: '2.5%',
-        height: '2.5%'
+        height: '2.5%',
+        '@media only screen and (max-width: 1300px)': {
+            width: '5%',
+            height: '5%'
+        }
     }
 });

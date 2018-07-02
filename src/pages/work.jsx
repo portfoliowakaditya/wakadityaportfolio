@@ -26,12 +26,12 @@ var sectionStyle = {
 export class Work extends React.Component {
 	render() {
 		return (
-            <div>
+            <div className = {css(styles.foots)}>
             <div className = {css(styles.header)} bsClass='fluid-container'>
                      <Mynavbar index = '3'/>
               
                 <Grid bsClass = 'fluid-container'>
-                    <Row className = {css(styles.row1)}>
+                    <Row className = {css(styles.row1)} bsClass = 'fluid-container'>
                         <Col xs={12} sm={12} md={12} lg={5} className = {css(styles.leftcol)}>
                 
                 
@@ -73,8 +73,9 @@ export class Work extends React.Component {
             </div>
                 <div>
             
-               <Portfoot/>
+              
                 </div>
+                 <Portfoot/>
             </div>
         );
 	}
@@ -157,7 +158,8 @@ const styles = StyleSheet.create({
     },
     leftcol:{
         margin: '0',
-        padding: '0'
+        padding: '0',
+        width: '100%'
     },
     sectionstyle: {
     '@media only screen and (max-width: 1080px)':{
@@ -221,6 +223,10 @@ const styles = StyleSheet.create({
           fontSize: '3.5rem'  
         },
         textAlign: 'justify'
+    },
+        foots: {
+        padding: '0',
+        margin: '0'
     },
     worktitle: {
         textAlign: 'center',

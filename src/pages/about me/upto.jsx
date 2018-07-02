@@ -77,7 +77,10 @@ const styles = StyleSheet.create({
         width: '33.33%',
         paddingTop: '5%',
         paddingBottom: '5%',
-        position: 'relative'
+        position: 'relative',
+        '@media only screen and (max-width: 1300px)':{
+            fontSize: '6rem'
+        }
  
     },
         col2: {
@@ -86,7 +89,10 @@ const styles = StyleSheet.create({
                     width: '33.33%',
         paddingTop: '5%',
         paddingBottom: '5%',
-        position: 'relative'
+        position: 'relative',
+                    '@media only screen and (max-width: 1300px)':{
+            fontSize: '6rem'
+        }
 
     },
         col3: {
@@ -95,7 +101,10 @@ const styles = StyleSheet.create({
         width: '33.33%',
         paddingTop: '5%',
         paddingBottom: '5%',
-        position: 'relative'
+        position: 'relative',
+                    '@media only screen and (max-width: 1300px)':{
+            fontSize: '6rem'
+        }
     },
         col4: {
         backgroundColor: '#495388',
@@ -103,7 +112,10 @@ const styles = StyleSheet.create({
                   width: '33.33%',
         paddingTop: '5%',
         paddingBottom: '5%',
-        position: 'relative'
+        position: 'relative',
+                    '@media only screen and (max-width: 1300px)':{
+            fontSize: '6rem'
+        }
     },
         col5: {
                     backgroundColor: '#ffaf00',
@@ -111,7 +123,10 @@ const styles = StyleSheet.create({
                   width: '33.33%',
         paddingTop: '5%',
         paddingBottom: '5%',
-        position: 'relative'
+        position: 'relative',
+                    '@media only screen and (max-width: 1300px)':{
+            fontSize: '6rem'
+        }
     },
         col6: {
          backgroundColor: '#73c094',
@@ -119,7 +134,10 @@ const styles = StyleSheet.create({
                   width: '33.33%',
         paddingTop: '5%',
         paddingBottom: '5%',
-        position: 'relative'
+        position: 'relative',
+                    '@media only screen and (max-width: 1300px)':{
+            fontSize: '6rem'
+        }
     }
     
         

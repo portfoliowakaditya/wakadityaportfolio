@@ -65,7 +65,7 @@ const styles = StyleSheet.create({
          '@media only screen and (max-width: 1300px)':
         {  
             paddingTop: '3rem',
-            fontSize: '5.5rem',
+            fontSize: '6rem',
             textAlign: 'center'
         }
     },
@@ -77,7 +77,7 @@ const styles = StyleSheet.create({
         fontSize: '2.1rem',
         '@media only screen and (max-width: 1300px)':
         {
-            fontSize: '3.5rem'
+            fontSize: '4.5rem'
         }
         }
         

@@ -41,13 +41,13 @@ const styles = StyleSheet.create({
         align: 'center',
         '@media only screen and (max-width: 1080px)': {
          lineHeight: '70px',
-         marginRight: '10%',
-            marginLeft: '10%'
+         marginRight: '3%',
+            marginLeft: '3%'
         },
         '@media only screen and (max-width: 1300px)': {
          lineHeight: '60px',
-         marginRight: '20%',
-            marginLeft: '20%'
+         marginRight: '10%',
+            marginLeft: '10%'
         },
         textAlign: 'center',
         borderRadius: '20px'
@@ -68,7 +68,7 @@ const styles = StyleSheet.create({
         transition: 'color 0.2s ease-out',
         textDecoration: 'None',
         '@media only screen and (max-width: 1300px)': {
-            fontSize: '17px'
+            fontSize: '23px'
         },
         ':hover' : {
             background: '#ffffff',
@@ -77,7 +77,7 @@ const styles = StyleSheet.create({
             transition: 'color 0.3s ease-out',
             textDecoration: 'None',
             '@media only screen and (max-width: 1300px)': {
-            fontSize: '18px'
+            fontSize: '24px'
         }
         }
     }

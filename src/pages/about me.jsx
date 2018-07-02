@@ -136,8 +136,8 @@ const styles = StyleSheet.create({
     },
     uptotitle: {
         fontSize: '5rem',
-        '@media only screen and (max_width:1080px)':{
-        fontSize: '6rem',
+        '@media only screen and (max_width:1300px)':{
+        fontSize: '7rem',
         },
         textAlign: 'center',
         paddingTop: '1.5rem',
