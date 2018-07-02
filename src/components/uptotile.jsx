@@ -28,7 +28,7 @@ const styles = StyleSheet.create({
     txc: {
         fontSize: '2rem',
          '@media only screen and (max-width: 1080px)': {
-         fontSize: '3rem'}
+         fontSize: '2.5rem'}
         
     }
 });
