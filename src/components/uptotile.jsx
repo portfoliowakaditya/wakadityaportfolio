@@ -22,13 +22,13 @@ const styles = StyleSheet.create({
 
     },
     imgc:{
-        height: '40%',
-        width: '40%'
+        height: '50%',
+        width: '50%'
     },
     txc: {
         fontSize: '2rem',
          '@media only screen and (max-width: 1080px)': {
-         fontSize: '1.8rem'}
+         fontSize: '3rem'}
         
     }
 });
