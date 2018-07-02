@@ -18,7 +18,7 @@ export class Upto extends React.Component {
                 <Row>
                 
                     <Col xs={4} sm = {4} md={4} lg={4} className = {css(styles.col1)}>  
-                        <Uptotile ic = {require('../../resources/react.png')} tx = 'Mastering React.js for UX Engineering' /> </Col>
+                        <Uptotile ic = {require('../../resources/react.png')} tx = 'Mastering React.js for rapid prototyping' /> </Col>
                     <Col xs={4} sm = {4} md={4} lg={4} className = {css(styles.col2)}>  
                        <Uptotile ic = {require('../../resources/briefcase.png')} tx = 'Looking for Co-op opportunities: Fall 2018' />
                     </Col>
@@ -60,8 +60,8 @@ const styles = StyleSheet.create({
         paddingLeft: '13rem',
         paddingRight: '13rem',
         '@media only screen and (max-width: 1300px)':{
-        paddingLeft: '6rem',
-        paddingRight: '6rem',
+        paddingLeft: '1rem',
+        paddingRight: '1rem',
         }
     },
     highlight: {

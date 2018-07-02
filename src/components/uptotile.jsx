@@ -22,8 +22,8 @@ const styles = StyleSheet.create({
 
     },
     imgc:{
-        height: '50%',
-        width: '50%'
+        height: '40%',
+        width: '40%'
     },
     txc: {
         fontSize: '2rem',
