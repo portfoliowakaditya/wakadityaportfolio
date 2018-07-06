@@ -66,7 +66,11 @@ const styles = StyleSheet.create({
     imgc: {
         height: '100%',
         width: '100%',
-        paddingTop: '3rem'
+        paddingTop: '3rem',
+        '@media only screen and (max-width: 1300px)' : {
+            height:'106%',
+            width: '106%'
+        }
     },
     pads: {
         paddingLeft: '10rem',

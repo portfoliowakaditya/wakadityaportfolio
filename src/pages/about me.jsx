@@ -45,7 +45,7 @@ export class Aboutme extends React.Component {
                    </Row>
                    
                 <Row className = {css(styles.gridclass2)}>
-                       <p className = {css(styles.galtitle)}> Creativity and Forward thinking are my biggest strengths. <br/>The most fun I have, is when I explore new spaces and work with passionate people, for transforming problems into opportunities.</p>
+                       <p className = {css(styles.galtitle)}> Creativity and Forward thinking are my biggest strengths. The most fun I have, is when I explore new spaces and work with passionate people, for transforming problems into opportunites.</p>
                        <Gal/>
                    </Row>
                    
@@ -148,9 +148,13 @@ const styles = StyleSheet.create({
                 
     },
     galtitle: {
-        fontSize: '2.5rem',
+        fontSize: '3rem',
         textAlign: 'center',
-        padding: '2rem'
+        padding: '2rem',
+        '@media only screen and (max-width: 1300px)': {
+            fontSize: '3.5rem',
+            textAlign: 'center'
+        }
                 
     },
     foots: {

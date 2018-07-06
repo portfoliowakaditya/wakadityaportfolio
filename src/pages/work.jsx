@@ -31,7 +31,7 @@ export class Work extends React.Component {
                      <Mynavbar index = '3'/>
               
                 <Grid bsClass = 'fluid-container'>
-                    <Row className = {css(styles.row1)} bsClass = 'fluid-container'>
+                    <Row className = {css(styles.row1)}>
                         <Col xs={12} sm={12} md={12} lg={5} className = {css(styles.leftcol)}>
                 
                 
@@ -71,10 +71,6 @@ export class Work extends React.Component {
             
                     
             </div>
-                <div>
-            
-              
-                </div>
                  <Portfoot/>
             </div>
         );
@@ -158,13 +154,9 @@ const styles = StyleSheet.create({
     },
     leftcol:{
         margin: '0',
-        padding: '0',
-        width: '100%'
+        padding: '0'
     },
     sectionstyle: {
-    '@media only screen and (max-width: 1080px)':{
-      width : '100%'  
-    },
     paddingTop: '6%',
     paddingLeft: '40%',
     paddingRight: '0%',
@@ -224,10 +216,6 @@ const styles = StyleSheet.create({
         },
         textAlign: 'justify'
     },
-        foots: {
-        padding: '0',
-        margin: '0'
-    },
     worktitle: {
         textAlign: 'center',
         paddingTop: '6rem',
@@ -236,6 +224,10 @@ const styles = StyleSheet.create({
             fontSize: '6rem'
         },
         fontSize: '4.5rem'
+    },
+        foots: {
+        padding: '0',
+        margin: '0'
     }
         
 });
