@@ -148,11 +148,13 @@ const styles = StyleSheet.create({
                 
     },
     galtitle: {
-        fontSize: '3rem',
+        fontSize: '2.75rem',
         textAlign: 'center',
         padding: '2rem',
+        paddingLeft: '5rem',
+        paddingRight: '5rem',
         '@media only screen and (max-width: 1300px)': {
-            fontSize: '3.5rem',
+            fontSize: '3rem',
             textAlign: 'center'
         }
                 

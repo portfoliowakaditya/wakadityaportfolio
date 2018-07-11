@@ -8,7 +8,7 @@ export class Uptotile extends React.Component {
         return (
             <div className = {css(styles.ftr)}>
                 <img src = {this.props.ic} align = "center" className = {css(styles.imgc)}/>
-                <p className = {css(styles.txc)}><br/>{this.props.tx}</p>
+                <p className = {css(styles.txc)}><br/><b>{this.props.tx}</b></p>
             </div>
             
         );
@@ -26,9 +26,10 @@ const styles = StyleSheet.create({
         width: '40%'
     },
     txc: {
-        fontSize: '2rem',
+        fontSize: '1.75rem',
          '@media only screen and (max-width: 1080px)': {
          fontSize: '2.5rem'}
+        
         
     }
 });

@@ -7,8 +7,8 @@ export class Contactline extends React.Component {
                 
         return (
             <div className = {css(styles.ftr)}>
-                <p className={css(styles.txc1)}> {this.props.txt}: &nbsp; &nbsp;&nbsp;&nbsp;
-                <img src = {this.props.ic} align = "center" className = {css(styles.imgc)}/>
+                <p> 
+                <img src = {this.props.ic} align = "center" className = {css(styles.imgc)}/> <br/>
                 <a className = {css(styles.lnk)} href = {this.props.lnk}><font className = {css(styles.txc)}> &nbsp; {this.props.tx}</font></a></p>
             </div>
             
@@ -18,36 +18,33 @@ export class Contactline extends React.Component {
 
 const styles = StyleSheet.create({
     ftr: {
+        paddingTop:'1rem',
             paddingBottom: '1rem',
-        textAlign: 'left',
+        textAlign: 'center',
     '@media only screen and (max-width: 1300px)': {
+        paddingTop:'2rem',
             paddingBottom: '3rem'
         },
 
     },
     imgc:{
-        height: '4.5%',
-        width: '4.5%',
+        opacity: '0.95',
+        height: '40%',
+        width: '40%',
         float:'center',
+        paddingBottom: '1rem',
     '@media only screen and (max-width: 1300px)': {
-        height: '6%',
-        width: '6%',
+          paddingBottom: '2rem',
+        height: '35%',
+        width: '35%',
         },
     },
     txc: {
-        fontSize: '2rem',
-        textAlign:'right',
+        fontSize: '1.5rem',
+        textAlign:'center',
          float:'center',
         '@media only screen and (max-width: 1300px)': {
-            fontSize: '4rem'
-        },
-            fontFamily: 'Raleway, sans-serif'
-        
-    },
-        txc1: {
-        fontSize: '2rem',
-        '@media only screen and (max-width: 1300px)': {
-            fontSize: '4rem'
+            fontSize: '3rem'
         },
             fontFamily: 'Raleway, sans-serif'
         

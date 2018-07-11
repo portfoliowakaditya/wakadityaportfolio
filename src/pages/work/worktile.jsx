@@ -6,16 +6,18 @@ import hoc from  '../../resources/work/hoc.png';
 import Typist from 'react-typist';
 import FadeIn from 'react-fade-in';
 import fomc from '../../resources/work/fomc.png';
-import beproj from '../../resources/work/beproj.png';
+import beproj from '../../resources/work/beproj.jpg';
 import f570 from '../../resources/work/570.jpg';
-import qdc from '../../resources/work/qdc.png';
+import qdc from '../../resources/work/qdc.jpg';
 import huddle from '../../resources/work/huddle.png';
-
+import baki from '../../resources/work/baki.png';
+import uber from '../../resources/work/uber.png';
 
 var hocback = {
     float: 'center',
-    margin: '2%',
+    margin: '1%',
     padding: '0',
+    marginBottom: '6%',
     height: '280px',
     width: '280px',
     backgroundSize: 'cover',
@@ -28,10 +30,11 @@ var hocback = {
 
 var beprojback = {
     float: 'center',
-    margin: '2%',
+    margin: '1%',
     padding: '0',
     height: '280px',
     width: '280px',
+      marginBottom: '6%',
     backgroundSize: 'cover',
   backgroundImage: `url(${beproj})`,
     MozBoxShadow: 'inset 0 0 10px #000000',
@@ -44,10 +47,11 @@ var beprojback = {
 
 var fomcback = {
     float: 'center',
-    margin: '2%',
+    margin: '1%',
     padding: '0',
     height: '280px',
     width: '280px',
+    marginBottom: '6%',
     backgroundSize: 'cover',
   backgroundImage: `url(${fomc})`,
     MozBoxShadow: 'inset 0 0 10px #000000',
@@ -59,10 +63,11 @@ var fomcback = {
 
 var f570back = {
     float: 'center',
-    margin: '2%',
+    margin: '1%',
     padding: '0',
     height: '280px',
     width: '280px',
+      marginBottom: '6%',
     backgroundSize: 'cover',
   backgroundImage: `url(${f570})`,
     MozBoxShadow: 'inset 0 0 10px #000000',
@@ -74,7 +79,7 @@ var f570back = {
 
 var qdcback = {
     float: 'center',
-    margin: '2%',
+    margin: '1%',
     padding: '0',
     height: '280px',
     width: '280px',
@@ -89,10 +94,11 @@ var qdcback = {
 
 var qdcback = {
     float: 'center',
-    margin: '2%',
+    margin: '1%',
     padding: '0',
     height: '280px',
     width: '280px',
+    marginBottom: '6%',
     backgroundSize: 'cover',
   backgroundImage: `url(${qdc})`,
     MozBoxShadow: 'inset 0 0 10px #000000',
@@ -104,7 +110,7 @@ var qdcback = {
 
 var hudback = {
     float: 'center',
-    margin: '2%',
+    margin: '1%',
     padding: '0',
     height: '280px',
     width: '280px',
@@ -115,6 +121,36 @@ var hudback = {
     boxShadow: 'inset 0 0 10px #000000',
      boxSizing: 'inherit'
 };
+
+var bakiback = {
+    float: 'center',
+    margin: '1%',
+    padding: '0',
+    height: '280px',
+    width: '280px',
+    backgroundSize: 'cover',
+  backgroundImage: `url(${baki})`,
+    MozBoxShadow: 'inset 0 0 10px #000000',
+    WebkitBoxShadow: 'inset 0 0 10px #000000',
+    boxShadow: 'inset 0 0 10px #000000',
+     boxSizing: 'inherit'
+};
+
+var uberback = {
+    float: 'center',
+    margin: '1%',
+    padding: '0',
+    height: '280px',
+    width: '280px',
+      marginBottom: '6%',
+    backgroundSize: 'cover',
+  backgroundImage: `url(${uber})`,
+    MozBoxShadow: 'inset 0 0 10px #000000',
+    WebkitBoxShadow: 'inset 0 0 10px #000000',
+    boxShadow: 'inset 0 0 10px #000000',
+     boxSizing: 'inherit'
+};
+
 
 
 
@@ -130,6 +166,8 @@ export class Worktile extends React.Component {
     fstate: css(styles.hochide),
     qdcstate: css(styles.hochide),
     hudstate: css(styles.hochide),
+    bakistate: css(styles.hochide),
+    uberstate: css(styles.hochide),
     tf: css(styles.titlefoot)
   }
         
@@ -140,60 +178,73 @@ export class Worktile extends React.Component {
 
            <Grid className = {css(styles.contain)} bsClass = 'responsive'>
                 
-                <Col xs={4} sm={4} md={4} lg={4} style = {hocback} onMouseOut={() => {this.setState({ hocstate: css(styles.hochide) })}} onMouseEnter={() => {this.setState({hocstate: css(styles.hoc) })}}>
-                    
-                    
-                    <div className = {this.state.hocstate} onMouseEnter={() => {this.setState({hocstate: css(styles.hoc) })}} onMouseOut={() => {this.setState({ hocstate: css(styles.hoc) })}}> <p onMouseEnter={() => {this.setState({hocstate: css(styles.hoc) })}} onMouseOut={() => {this.setState({ hocstate: css(styles.hoc) })}}>Redesigning Hour of Code</p> <p className = {this.state.tf} onMouseEnter={() => {this.setState({hocstate: css(styles.hoc) })}} onMouseOut={() => {this.setState({ hocstate: css(styles.hoc) })}}> UX Research | Interface Design | Usability Studies </p> </div>
-                    
-                    
-                </Col>
                 
-                                                
-                <Col xs={4} sm={4} md={4} lg={4} style = {qdcback} onMouseOut={() => {this.setState({ qdcstate: css(styles.hochide) })}} onMouseEnter={() => {this.setState({qdcstate: css(styles.qdc) })}}>
-                    
-                    
-                    <div className = {this.state.qdcstate} onMouseEnter={() => {this.setState({qdcstate: css(styles.qdc) })}} onMouseOut={() => {this.setState({ qdcstate: css(styles.qdc) })}}> <p onMouseEnter={() => {this.setState({qdcstate: css(styles.qdc) })}} onMouseOut={() => {this.setState({ qdcstate: css(styles.qdc) })}}> Research in Human Centered Design </p> <p className = {this.state.tf} onMouseEnter={() => {this.setState({qdcstate: css(styles.qdc) })}} onMouseOut={() => {this.setState({ qdcstate: css(styles.qdc) })}}> Qualitative Data Collection | UX Design </p> </div>
-                    
-                    
-                </Col>
                 
                                 
-                <Col xs={4} sm={4} md={4} lg={4} style = {fomcback} onMouseOut={() => {this.setState({ fomcstate: css(styles.hochide) })}} onMouseEnter={() => {this.setState({fomcstate: css(styles.fomc) })}}>
+                     <Col xs={6} sm={6} md={6} lg={4} style = {uberback} onMouseOut={() => {this.setState({ uberstate: css(styles.hochide) })}} onMouseEnter={() => {this.setState({uberstate: css(styles.uber) })}}>
                     
                     
-                    <div className = {this.state.fomcstate} onMouseEnter={() => {this.setState({fomcstate: css(styles.fomc) })}} onMouseOut={() => {this.setState({ fomcstate: css(styles.fomc) })}}> <p onMouseEnter={() => {this.setState({fomcstate: css(styles.fomc) })}} onMouseOut={() => {this.setState({ fomcstate: css(styles.fomc) })}}> Optimizing Sales in Ecommerce </p> <p className = {this.state.tf} onMouseEnter={() => {this.setState({fomcstate: css(styles.fomc) })}} onMouseOut={() => {this.setState({ fomcstate: css(styles.fomc) })}}> Data Science | Business Analytics </p> </div>
+                    <div className = {this.state.uberstate} onMouseEnter={() => {this.setState({uberstate: css(styles.uber) })}} onMouseOut={() => {this.setState({ uberstate: css(styles.hochide) })}}> <p onMouseEnter={() => {this.setState({uberstate: css(styles.uber) })}} onMouseOut={() => {this.setState({ uberstate: css(styles.uber) })}}> Risk Analytics </p> <p className = {this.state.tf} onMouseEnter={() => {this.setState({uberstate: css(styles.uber) })}} onMouseOut={() => {this.setState({ uberstate: css(styles.uber) })}}> Wokring with the Risk Team at Uber Inc. to mitigate Payment Fraud. </p> </div>
+                     <p className = {css(styles.leftsub)}> Summer 2018 | <font className = {css(styles.rightsub)}> Experential Learning: Internship  </font> </p> 
                     
                     
                 </Col>
+                
+                
+                                <Col xs={6} sm={6} md={6} lg={4} style = {qdcback} onMouseOut={() => {this.setState({ qdcstate: css(styles.hochide) })}} onMouseEnter={() => {this.setState({qdcstate: css(styles.qdc) })}}>
+                    
+                    
+                    <div className = {this.state.qdcstate} onMouseEnter={() => {this.setState({qdcstate: css(styles.qdc) })}} onMouseOut={() => {this.setState({ qdcstate: css(styles.qdc) })}}> <p onMouseEnter={() => {this.setState({qdcstate: css(styles.qdc) })}} onMouseOut={() => {this.setState({ qdcstate: css(styles.qdc) })}}> UX Research </p> <p className = {this.state.tf} onMouseEnter={() => {this.setState({qdcstate: css(styles.qdc) })}} onMouseOut={() => {this.setState({ qdcstate: css(styles.qdc) })}}> Exploring a unique design space at the UW Co-motion MakerSpace, using principles of CoDesign.  </p> </div>
+                      <p className = {css(styles.leftsub)}>Spring 2018 | <font className = {css(styles.rightsub)}> Directed Research: Intro to Sewing Workshop </font> </p> 
+                    
+                    
+                </Col>
+           
+                
+             
+                <Col xs={6} sm={6} md={6} lg={4} style = {hocback} onMouseOut={() => {this.setState({ hocstate: css(styles.hochide) })}} onMouseEnter={() => {this.setState({hocstate: css(styles.hoc) })}}>
+                    
+                    
+                    <div className = {this.state.hocstate} onMouseEnter={() => {this.setState({hocstate: css(styles.hoc) })}} onMouseOut={() => {this.setState({ hocstate: css(styles.hoc) })}}> <p onMouseEnter={() => {this.setState({hocstate: css(styles.hoc) })}} onMouseOut={() => {this.setState({ hocstate: css(styles.hoc) })}}> UX Design </p> <p className = {this.state.tf} onMouseEnter={() => {this.setState({hocstate: css(styles.hoc) })}} onMouseOut={() => {this.setState({ hocstate: css(styles.hoc) })}}> Applying design methods to the Hour of Code initiative, for improving the way kids learn to code!  </p> </div>
+                    
+                    <p className = {css(styles.leftsub)}>Winter 2018 | <font className = {css(styles.rightsub)}>Redesigning a Visual Programming Interface</font> </p> 
+                    
+                    
+                </Col>
+             
+                                  
+
+                <Col xs={6} sm={6} md={6} lg={4} style = {fomcback} onMouseOut={() => {this.setState({ fomcstate: css(styles.hochide) })}} onMouseEnter={() => {this.setState({fomcstate: css(styles.fomc) })}}>
+                    
+                    
+                    <div className = {this.state.fomcstate} onMouseEnter={() => {this.setState({fomcstate: css(styles.fomc) })}} onMouseOut={() => {this.setState({ fomcstate: css(styles.fomc) })}}> <p onMouseEnter={() => {this.setState({fomcstate: css(styles.fomc) })}} onMouseOut={() => {this.setState({ fomcstate: css(styles.fomc) })}}> Data Science </p> <p className = {this.state.tf} onMouseEnter={() => {this.setState({fomcstate: css(styles.fomc) })}} onMouseOut={() => {this.setState({ fomcstate: css(styles.fomc) })}}> Developing strategies to improve sales, by analyzing the transaction logs data of customer orders. </p> </div>
+                         <p className = {css(styles.leftsub)}>Winter 2018 | <font className = {css(styles.rightsub)}> Sales Analytics in Ecommerce </font> </p> 
+                     
+                </Col>
+                
                 
 
-                
-                    <Col xs={4} sm={4} md={4} lg={4} style = {f570back} onMouseOut={() => {this.setState({ fstate: css(styles.hochide) })}} onMouseEnter={() => {this.setState({fstate: css(styles.f570) })}}>
+               
+                    <Col xs={6} sm={6} md={6} lg={4} style = {f570back} onMouseOut={() => {this.setState({ fstate: css(styles.hochide) })}} onMouseEnter={() => {this.setState({fstate: css(styles.f570) })}}>
                     
                     
-                    <div className = {this.state.fstate} onMouseEnter={() => {this.setState({fstate: css(styles.f570) })}} onMouseOut={() => {this.setState({ fstate: css(styles.f570) })}}> <p onMouseEnter={() => {this.setState({fstate: css(styles.f570) })}} onMouseOut={() => {this.setState({ fstate: css(styles.f570) })}}> Assistive Tech for Alzheimer's </p> <p className = {this.state.tf} onMouseEnter={() => {this.setState({fstate: css(styles.f570) })}} onMouseOut={() => {this.setState({ fstate: css(styles.f570) })}}> User Research | Qualitative Analysis | Exploratory Analysis </p> </div>
-                    
-                    
-                </Col>
-
-                
-                <Col xs={4} sm={4} md={4} lg={4} style = {beprojback} onMouseOut={() => {this.setState({ bestate: css(styles.hochide) })}} onMouseEnter={() => {this.setState({bestate: css(styles.beproj) })}}>
-                    
-                    
-                    <div className = {this.state.bestate} onMouseEnter={() => {this.setState({bestate: css(styles.beproj) })}} onMouseOut={() => {this.setState({ bestate: css(styles.beproj) })}}> <p onMouseEnter={() => {this.setState({bestate: css(styles.beproj) })}} onMouseOut={() => {this.setState({ bestate: css(styles.beproj) })}}> Chatbot for Movie Reviews </p> <p className = {this.state.tf} onMouseEnter={() => {this.setState({bestate: css(styles.beproj) })}} onMouseOut={() => {this.setState({ bestate: css(styles.beproj) })}}> Sentiment Analysis | Interface Design | Systems Integration </p> </div>
+                    <div className = {this.state.fstate} onMouseEnter={() => {this.setState({fstate: css(styles.f570) })}} onMouseOut={() => {this.setState({ fstate: css(styles.f570) })}}> <p onMouseEnter={() => {this.setState({fstate: css(styles.f570) })}} onMouseOut={() => {this.setState({ fstate: css(styles.f570) })}}> User Research </p> <p className = {this.state.tf} onMouseEnter={() => {this.setState({fstate: css(styles.f570) })}} onMouseOut={() => {this.setState({ fstate: css(styles.f570) })}}> Understanding the ethical and usability concerns of assistive technology for caregivers & patients.  </p> </div>
+                     <p className = {css(styles.leftsub)}> Fall 2017 | <font className = {css(styles.rightsub)}> Exploring Assistive Technology for Alzheimer's Patients. </font> </p> 
                     
                     
                 </Col>
                 
                 
-                <Col xs={4} sm={4} md={4} lg={4} style = {hudback} onMouseOut={() => {this.setState({ bestate: css(styles.hochide) })}} onMouseEnter={() => {this.setState({hudstate: css(styles.huddle) })}}>
+                <Col xs={6} sm={6} md={6} lg={4} style = {beprojback} onMouseOut={() => {this.setState({ bestate: css(styles.hochide) })}} onMouseEnter={() => {this.setState({bestate: css(styles.beproj) })}}>
                     
                     
-                    <div className = {this.state.hudstate} onMouseEnter={() => {this.setState({hudstate: css(styles.huddle) })}} onMouseOut={() => {this.setState({ hudstate: css(styles.hochide) })}}> <p onMouseEnter={() => {this.setState({hudstate: css(styles.huddle) })}} onMouseOut={() => {this.setState({ hudstate: css(styles.huddle) })}}> Design for Crowdfunding </p> <p className = {this.state.tf} onMouseEnter={() => {this.setState({hudstate: css(styles.huddle) })}} onMouseOut={() => {this.setState({ hudstate: css(styles.huddle) })}}> Systems Design Interface Design </p> </div>
+                    <div className = {this.state.bestate} onMouseEnter={() => {this.setState({bestate: css(styles.beproj) })}} onMouseOut={() => {this.setState({ bestate: css(styles.beproj) })}}> <p onMouseEnter={() => {this.setState({bestate: css(styles.beproj) })}} onMouseOut={() => {this.setState({ bestate: css(styles.beproj) })}}> UI Design </p> <p className = {this.state.tf} onMouseEnter={() => {this.setState({bestate: css(styles.beproj) })}} onMouseOut={() => {this.setState({ bestate: css(styles.beproj) })}}> Translating user requirements, content organizations and backend analytics into seamless interfaces. </p> </div>
+                     <p className = {css(styles.leftsub)}> Summer 2017 | <font className = {css(styles.rightsub)}> User Interface design and development </font> </p> 
                     
                     
                 </Col>
                 
+                    
                 
             </Grid>
 
@@ -209,12 +260,12 @@ const styles = StyleSheet.create({
     contain: {
         paddingTop: '4rem',
         paddingBottom: '10rem',
-        paddingLeft: '15%',
+        paddingLeft: '17.5%',
         '@media only screen and (max-width: 1080px)': {
             textAlign: 'center',
             align: 'center',
             verticalAlign: 'center',
-            paddingLeft: '19%'
+            paddingLeft: '21%'
         }
     },
     hoc: {
@@ -222,7 +273,7 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     margin: '0',
     padding: '3rem',
-      fontSize: '2.3rem',
+      fontSize: '3rem',
     color: '#ffffff',
     backgroundColor: '#1c2329',
     height: '100%',
@@ -243,7 +294,7 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     margin: '0',
     padding: '3rem',
-       fontSize: '2.3rem',
+       fontSize: '3rem',
     color: '#ffffff',
     backgroundColor: '#1c2329',
     height: '100%',
@@ -256,7 +307,7 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     margin: '0',
     padding: '3rem',
-     fontSize: '2.3rem',
+     fontSize: '3rem',
     color: '#ffffff',
     backgroundColor: '#1c2329',
     height: '100%',
@@ -269,7 +320,7 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     margin: '0',
     padding: '3rem',
-    fontSize: '2.3rem',
+    fontSize: '3rem',
     color: '#ffffff',
     backgroundColor: '#1c2329',
     height: '100%',
@@ -282,7 +333,7 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     margin: '0',
     padding: '3rem',
-    fontSize: '2.3rem',
+    fontSize: '3rem',
     color: '#ffffff',
     backgroundColor: '#1c2329',
     height: '100%',
@@ -303,12 +354,55 @@ const styles = StyleSheet.create({
     opacity: '0.93',
     boxSizing: 'inherit'
     },
+    baki : {
+    display: 'block',
+    textAlign: 'center',
+    margin: '0',
+    padding: '3rem',
+    fontSize: '2.3rem',
+    color: '#ffffff',
+    backgroundColor: '#1c2329',
+    height: '100%',
+    width: '100%',
+    opacity: '0.93',
+    boxSizing: 'inherit'
+    },
+    uber : {
+    display: 'block',
+    textAlign: 'center',
+    margin: '0',
+    padding: '3rem',
+    fontSize: '3rem',
+    color: '#ffffff',
+    backgroundColor: '#1c2329',
+    height: '100%',
+    width: '100%',
+    opacity: '0.93',
+    boxSizing: 'inherit'
+    },
     titlefoot: {
         paddingTop: '10%',
         borderTop: '1px solid',
         fontSize: '2rem',
         boxSizing: 'inherit'
         
+    },
+    leftsub: {
+        paddingTop: '1rem',
+        '@media only screen and (max-width: 1300px)': {
+            paddingTop: '0.5rem'
+        },
+        textAlign: 'center',
+        fontWeight: 'bold',
+        color: '#1c2329',
+        fontSize: '1.6rem'
+    },
+    rightsub: {
+        color: '#1c2329',
+        fontWeight: 'lighter'
+    },
+    padder: {
+        paddingBottom: '4rem'
     }
 });
 

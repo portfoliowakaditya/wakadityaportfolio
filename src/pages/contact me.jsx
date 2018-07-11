@@ -32,18 +32,25 @@ export class Contactme extends React.Component {
                 
                     
                     <Row>
+                        
                         <Col xs={12} sm={12} md={12} lg={6} className = {css(styles.filler)}>
                     <p className = {css(styles.subtitle)}> I would love to hear feedback, suggestions or collaboration opportunities from you. <br/> Together we can build something beautiful!   The best ways to contact me are:</p>
                             
+                            <Row>
+                           <Col xs={1} sm={1} md={1} lg={1}>
+                            </Col>
+                                <Col xs={5} sm={5} md={5} lg={4} className = {css(styles.leftcon)}>
                                                      
-                            <Contactline ic={require('../resources/contact/gmail.png')} tx='wkaditya@uw.edu' lnk="mailto:wkaditya@uw.eu" txt = 'You can mail me at'/>
-                            
-                            <Contactline ic={require('../resources/contact/phone-receiver.png')} tx='(360) 813-8770' lnk="#/contactme" txt='You can Call me at'/>
-
-                            
-                             <Contactline ic={require('../resources/contact/placeholder (1).png')} tx='Seattle, WA' lnk="https://goo.gl/maps/agcFSP7e24Q2" txt='I am currently living in'/>
-                            
-                            <p className = {css(styles.subtitle)}>To know more about my work, professional and personal interests, find the links to my <font color='#333'>Github</font>, <font color='#00a0dc'>LinkedIn</font> and <font color='#3b5998'>Facebook</font> Profiles in the footer.</p>
+                            <Contactline ic={require('../resources/contact/gmail.png')} tx='wkaditya@uw.edu' lnk="mailto:wkaditya@uw.eu" />
+                                    </Col>
+                        
+                                <Col  xs={5} sm={5} md={5} lg={4} className = {css(styles.rightcon)}>
+                            <Contactline ic={require('../resources/contact/phone-receiver.png')} tx='(360) 813-8770' lnk="#/contactme" />
+                                </Col>
+                                                     <Col xs={2} sm={2} md={2} lg={3}>
+                            </Col>
+                            </Row>
+                            <p className = {css(styles.subtitle)}>To know more about my technical, professional and personal interests, find the links to my <font color='#333'>Github</font>, <font color='#00a0dc'>LinkedIn</font> and <font color='#3b5998'>Facebook</font> Profiles in the footer.</p>
 
 
                         
@@ -83,7 +90,7 @@ const styles = StyleSheet.create({
         }
     },
     contitle: {
-        fontSize: '5rem',
+        fontSize: '4.5rem',
      '@media only screen and (max-width: 1300px)': {
          fontSize: '7rem',
          lineHeight: '5rem',
@@ -97,6 +104,7 @@ const styles = StyleSheet.create({
         margin: '0'
     },
     subtitle: {
+        textAlign: 'justify',
      paddingTop: '2rem',
         fontSize: '2.5rem',
      '@media only screen and (max-width: 1300px)': {
@@ -142,5 +150,14 @@ const styles = StyleSheet.create({
     filler: {
     '@media only screen and (max-width: 1300px)': {        
         paddingBottom: '3rem'
-    }}
+    }},
+    leftcon: {
+        
+        align :'right'
+    },
+    rightcon: {
+       
+        align: 'left'
+        
+    }
 });

@@ -10,6 +10,7 @@ import {Grid, Col, Row} from 'react-bootstrap';
 import FadeIn from 'react-fade-in';
 import Typist from 'react-typist';
 import {Worktile} from './work/worktile.jsx';
+import {Designtile} from './work/designtile.jsx';
 import {Portfoot} from '../components/footer.jsx';
 
 
@@ -27,16 +28,16 @@ export class Work extends React.Component {
 	render() {
 		return (
             <div className = {css(styles.foots)}>
-            <div className = {css(styles.header)} bsClass='fluid-container'>
+            <div className = {css(styles.header)}>
                      <Mynavbar index = '3'/>
               
-                <Grid bsClass = 'fluid-container'>
+<Grid bsClass = 'container-fluid' className = {css(styles.padder)}>
                     <Row className = {css(styles.row1)}>
                         <Col xs={12} sm={12} md={12} lg={5} className = {css(styles.leftcol)}>
                 
                 
                             
-                <div style={ sectionStyle } className = {css(styles.sectionstyle)} bsClass = "fluid-container">
+                <div style={ sectionStyle } className = {css(styles.sectionstyle)} bsClass = "container fluid">
                     <FadeIn delay={110}>
                     <div className={css(styles.name)}>Aditya Rajesh Wakade<br/> </div> <div><font className={css(styles.nameone)}>Design</font> <font className={css(styles.nametwo)}>Build</font>   <font className={css(styles.namethree)}>Scale</font>  </div>
                 </FadeIn>
@@ -66,6 +67,19 @@ export class Work extends React.Component {
             <Row>
                     <Worktile/>
                     </Row>
+                    
+            <Row className = {css(styles.row2)}>
+
+               <div className = {css(styles.worktitle)}>
+                My Design Process
+                </div>
+                            
+                    </Row>
+                    
+            <Row>
+        <Designtile/>
+        </Row>
+                    
                 
                      </Grid>
             
@@ -80,7 +94,8 @@ export class Work extends React.Component {
 
 const styles = StyleSheet.create({
     header:{
-        paddingTop:'1.7rem'
+        paddingTop:'1.7rem',
+        margin: '0'
     },
     name: {
         fontSize: '4rem',
@@ -217,6 +232,7 @@ const styles = StyleSheet.create({
         textAlign: 'justify'
     },
     worktitle: {
+        paddingBottom : '3rem',
         textAlign: 'center',
         paddingTop: '6rem',
         '@media only screen and (max-width: 1080px)':{
@@ -228,6 +244,15 @@ const styles = StyleSheet.create({
         foots: {
         padding: '0',
         margin: '0'
+    },
+    padder: {
+        margin: '0',
+        padding: '0',
+        overflowX: 'hidden',
+        '@media only screen and (max-width: 1300px)': {
+             float: 'center'
+        }
+       
     }
         
 });
