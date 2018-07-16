@@ -405,4 +405,3 @@ const styles = StyleSheet.create({
         paddingBottom: '4rem'
     }
 });
-

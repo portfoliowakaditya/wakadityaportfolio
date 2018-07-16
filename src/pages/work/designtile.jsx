@@ -58,7 +58,7 @@ import {Grid, Row, Col} from 'react-bootstrap';
                 <Col xs={12} sm={12} md={3} lg={3} className = {css(styles.ftr2)} >
                 
                     <img src = {require('../../resources/work/design/notepad.png')} className = {css(styles.imgc1)} />
-                    <font className = {css(styles.txc)}> System Design and Intervention </font>
+                    <font className = {css(styles.txc)}> Building an Information System </font>
                 
                 </Col>
                 
@@ -313,7 +313,7 @@ const styles = StyleSheet.create({
     },
     invert: {
         paddingTop: '3rem',
-        paddingBottom: '5rem'
+        paddingBottom: '4rem'
     }
     });
             

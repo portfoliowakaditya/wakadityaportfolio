@@ -14,8 +14,8 @@ export class Descrip extends React.Component {
         return (
            
          <Jumbotron bsClass = "fluid" >
-                <p className = {css(styles.title)}>I am Aditya, an aspiring Designer, passionate about data driven technology.</p>
-      <p align = "justify" className = {css(styles.subtitle)}> I develop designs, visualizations and analyses for building advanced yet seamless information experiences. When I'm not working, I'm playing/ listening to music, following standup comedy, attending meetups or watching documentaries. Feel free to contact me for discussing anything about my work or interests. </p>
+                <p className = {css(styles.title)}> (^_^)_/ Hello. </p>
+      <p align = "justify" className = {css(styles.subtitle)}> I develop designs, visualizations and analyses for converting into insights. I love learning about new businesses and technologies.  When I'm not working, I'm playing/ listening to music, following standup comedy, attending meetups or watching documentaries. Feel free to contact me. I would love to discuss anything about my work or interests with you. </p>
     
         <Typist avgTypingDelay = {0} stdTypingDelay = {1} cursor = {{show: false}}>
     <font className = {css(styles.block1)}>textttxttxtextrtrtrttexttexttextrtrtrtt </font> <font className = {css(styles.block2)}>ttettttrtrtrttextxtextxtt </font> <font className = {css(styles.block3)}>txtxxexextx </font>
@@ -61,11 +61,11 @@ const styles = StyleSheet.create({
     },
     title: {
         paddingBottom: '1.5rem',
-        fontSize: '4.25rem',
+        fontSize: '6rem',
          '@media only screen and (max-width: 1300px)':
         {  
             paddingTop: '3rem',
-            fontSize: '6rem',
+            fontSize: '8rem',
             textAlign: 'center'
         }
     },

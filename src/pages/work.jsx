@@ -47,12 +47,13 @@ export class Work extends React.Component {
                             </Col>
                         <Col xs = {12} sm={12} md={12} lg={7} className = {css(styles.titleblock)}>
                             <div className = {css(styles.title)}> 
-                                 Bridging the gap between Design and Engineering.
+                                 Welcome to my portfolio.
                             </div>
                     <Typist avgTypingDelay = {0} stdTypingDelay = {1} cursor = {{show: false}}>
                     <font className = {css(styles.block1)}>textttxttxtextrtrtrtrtrtrtt </font> <font className = {css(styles.block2)}>ttettttrtrtrttxtt </font> <font className = {css(styles.block3)}>txtxxxxxtx </font>
                             </Typist>
-                            <p className={css(styles.subtitle)}> Hello! I am a <b>UX Designer/ Engineer</b>, passionate about delivering experiences which are delightful to use, and to build. I love to translate inferences from qualitative and quantitative data analyses, into stylized visual components. <br/>Welcome to my portfolio :)</p>
+                            <p className={css(styles.subtitle)}>   I am an aspiring <b>UX Researcher/ Designer</b>, having experience in Web Development, Data Science and Software Engineering. With a diverse perspective towards software and data systems, I aim to design information experiences which are interdisciplinary, to bridge the gap between customers, business and engineering.
+                            </p>
                     </Col>
                             </Row>
                          
@@ -79,7 +80,13 @@ export class Work extends React.Component {
             <Row>
         <Designtile/>
         </Row>
+    
+                  <Row className = {css(styles.row2)}>
+                   <div className = {css(styles.worktitle1)}>
+                Thank you for visiting my portfolio!
+                </div>
                     
+                      </Row>
                 
                      </Grid>
             
@@ -209,10 +216,12 @@ const styles = StyleSheet.create({
           lineHeight: '0'
     },
     title: {
-        paddingTop: '0',
+        paddingTop: '2rem',
         marginTop:'0',
         backgroundColor: '#ffffff',
-        fontSize: '5rem'
+        fontSize: '5rem',
+        '@media only screen and (max-width: 1080px)':{
+            fontSize: '7rem'}
     },
     titleblock: {
         paddingTop: '0',
@@ -227,7 +236,7 @@ const styles = StyleSheet.create({
         paddingTop: '4rem',
         fontSize: '2.5rem',
         '@media only screen and (max-width: 1080px)': {
-          fontSize: '3.5rem'  
+          fontSize: '4rem'  
         },
         textAlign: 'justify'
     },
@@ -240,6 +249,17 @@ const styles = StyleSheet.create({
             fontSize: '6rem'
         },
         fontSize: '4.5rem'
+    },
+        worktitle1: {
+        paddingBottom : '3rem',
+        textAlign: 'center',
+        paddingTop: '6rem',
+        '@media only screen and (max-width: 1080px)':{
+          paddingTop: '8rem',
+            fontSize: '2rem',
+            paddingBottom:'5rem'
+        },
+        fontSize: '2.5rem'
     },
         foots: {
         padding: '0',
