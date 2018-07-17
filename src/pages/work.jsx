@@ -65,7 +65,7 @@ export class Work extends React.Component {
                             </div>
                             
                     </Row>
-            <Row>
+            <Row className = {css(styles.center)}>
                     <Worktile/>
                     </Row>
                     
@@ -273,6 +273,9 @@ const styles = StyleSheet.create({
              float: 'center'
         }
        
+    },
+    center: {
+        textAlign: 'center'
     }
         
 });

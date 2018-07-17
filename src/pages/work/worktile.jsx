@@ -18,8 +18,8 @@ var hocback = {
     margin: '1%',
     padding: '0',
     marginBottom: '6%',
-    height: '280px',
-    width: '280px',
+    height: '350px',
+    width: '350px',
     backgroundSize: 'cover',
   backgroundImage: `url(${hoc})`,
     MozBoxShadow: 'inset 0 0 10px #000000',
@@ -32,8 +32,8 @@ var beprojback = {
     float: 'center',
     margin: '1%',
     padding: '0',
-    height: '280px',
-    width: '280px',
+    height: '350px',
+    width: '350px',
       marginBottom: '6%',
     backgroundSize: 'cover',
   backgroundImage: `url(${beproj})`,
@@ -49,8 +49,8 @@ var fomcback = {
     float: 'center',
     margin: '1%',
     padding: '0',
-    height: '280px',
-    width: '280px',
+     height: '350px',
+    width: '350px',
     marginBottom: '6%',
     backgroundSize: 'cover',
   backgroundImage: `url(${fomc})`,
@@ -65,8 +65,8 @@ var f570back = {
     float: 'center',
     margin: '1%',
     padding: '0',
-    height: '280px',
-    width: '280px',
+    height: '350px',
+    width: '350px',
       marginBottom: '6%',
     backgroundSize: 'cover',
   backgroundImage: `url(${f570})`,
@@ -81,8 +81,8 @@ var qdcback = {
     float: 'center',
     margin: '1%',
     padding: '0',
-    height: '280px',
-    width: '280px',
+    height: '350px',
+    width: '350px',
     backgroundSize: 'cover',
   backgroundImage: `url(${qdc})`,
     MozBoxShadow: 'inset 0 0 10px #000000',
@@ -96,8 +96,8 @@ var qdcback = {
     float: 'center',
     margin: '1%',
     padding: '0',
-    height: '280px',
-    width: '280px',
+    height: '350px',
+    width: '350px',
     marginBottom: '6%',
     backgroundSize: 'cover',
   backgroundImage: `url(${qdc})`,
@@ -112,8 +112,8 @@ var hudback = {
     float: 'center',
     margin: '1%',
     padding: '0',
-    height: '280px',
-    width: '280px',
+    height: '350px',
+    width: '350px',
     backgroundSize: 'cover',
   backgroundImage: `url(${huddle})`,
     MozBoxShadow: 'inset 0 0 10px #000000',
@@ -126,8 +126,8 @@ var bakiback = {
     float: 'center',
     margin: '1%',
     padding: '0',
-    height: '280px',
-    width: '280px',
+    height: '350px',
+    width: '350px',
     backgroundSize: 'cover',
   backgroundImage: `url(${baki})`,
     MozBoxShadow: 'inset 0 0 10px #000000',
@@ -140,8 +140,8 @@ var uberback = {
     float: 'center',
     margin: '1%',
     padding: '0',
-    height: '280px',
-    width: '280px',
+    height: '350px',
+    width: '350px',
       marginBottom: '6%',
     backgroundSize: 'cover',
   backgroundImage: `url(${uber})`,
@@ -184,7 +184,7 @@ export class Worktile extends React.Component {
                      <Col xs={6} sm={6} md={6} lg={4} style = {uberback} onMouseOut={() => {this.setState({ uberstate: css(styles.hochide) })}} onMouseEnter={() => {this.setState({uberstate: css(styles.uber) })}}>
                     
                     
-                    <div className = {this.state.uberstate} onMouseEnter={() => {this.setState({uberstate: css(styles.uber) })}} onMouseOut={() => {this.setState({ uberstate: css(styles.hochide) })}}> <p onMouseEnter={() => {this.setState({uberstate: css(styles.uber) })}} onMouseOut={() => {this.setState({ uberstate: css(styles.uber) })}}> Risk Analytics </p> <p className = {this.state.tf} onMouseEnter={() => {this.setState({uberstate: css(styles.uber) })}} onMouseOut={() => {this.setState({ uberstate: css(styles.uber) })}}> Wokring with the Risk Team at Uber Inc. to mitigate Payment Fraud. </p> </div>
+                    <div className = {this.state.uberstate} onMouseEnter={() => {this.setState({uberstate: css(styles.uber) })}} onMouseOut={() => {this.setState({ uberstate: css(styles.hochide) })}}> <p onMouseEnter={() => {this.setState({uberstate: css(styles.uber) })}} onMouseOut={() => {this.setState({ uberstate: css(styles.uber) })}}> Risk lolAnalytics </p> <p className = {this.state.tf} onMouseEnter={() => {this.setState({uberstate: css(styles.uber) })}} onMouseOut={() => {this.setState({ uberstate: css(styles.uber) })}}> Wokring with the Risk Team at Uber Inc. to mitigate Payment Fraud. </p> </div>
                      <p className = {css(styles.leftsub)}> Summer 2018 | <font className = {css(styles.rightsub)}> Experential Learning: Internship  </font> </p> 
                     
                     
@@ -260,12 +260,12 @@ const styles = StyleSheet.create({
     contain: {
         paddingTop: '4rem',
         paddingBottom: '10rem',
-        paddingLeft: '17.5%',
+        paddingLeft:'10%',
         '@media only screen and (max-width: 1080px)': {
+            paddingLeft: '14%',
             textAlign: 'center',
             align: 'center',
-            verticalAlign: 'center',
-            paddingLeft: '21%'
+            verticalAlign: 'center'
         }
     },
     hoc: {
@@ -395,7 +395,7 @@ const styles = StyleSheet.create({
         textAlign: 'center',
         fontWeight: 'bold',
         color: '#1c2329',
-        fontSize: '1.6rem'
+        fontSize: '2rem'
     },
     rightsub: {
         color: '#1c2329',
@@ -404,4 +404,4 @@ const styles = StyleSheet.create({
     padder: {
         paddingBottom: '4rem'
     }
-});
+}); 
