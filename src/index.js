@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { HashRouter, Route, Switch } from 'react-router-dom';
-
+import {Alz} from './pages/work/project/alz.jsx'
 import { Aboutme } from './pages/about me.jsx';
 import { Contactme } from './pages/contact me.jsx';
 import { myblog } from './pages/blog.jsx';
@@ -32,6 +32,7 @@ class App extends React.Component {
                     <Route path='/contactme' component={Contactme}/>
                     <Route exact path='/' component={Work}/>
                     <Route path='/blog' component={myblog}/>
+                    <Route path='/alz' component={Alz}/>
                     
                 </Switch>
 			</HashRouter>
