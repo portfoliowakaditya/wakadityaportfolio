@@ -37,7 +37,7 @@ export class Work extends React.Component {
                 
                 
                             
-                <div style={ sectionStyle } className = {css(styles.sectionstyle)} bsClass = "container fluid">
+                <div style={ sectionStyle } className = {css(styles.sectionstyle)} bsClass = "container-fluid">
                     <FadeIn delay={110}>
                     <div className={css(styles.name)}>Aditya Rajesh Wakade<br/> </div> <div><font className={css(styles.nameone)}>Design</font> <font className={css(styles.nametwo)}>Build</font>   <font className={css(styles.namethree)}>Scale</font>  </div>
                 </FadeIn>
@@ -66,10 +66,14 @@ export class Work extends React.Component {
                             
                     </Row>
             <Row className = {css(styles.center)}>
+                <p>
                     <Worktile/>
+                </p>
+            
                     </Row>
+    
                     
-            <Row className = {css(styles.row2)}>
+            <Row className = {css(styles.row2)} >
 
                <div className = {css(styles.worktitle)}>
                 My Design Process
@@ -275,7 +279,12 @@ const styles = StyleSheet.create({
        
     },
     center: {
-        textAlign: 'center'
+        textAlign: 'center',
+        align: 'middle',
+        paddingLeft: '10%',
+           '@media only screen and (max-width: 1300px)': {
+           paddingLeft: '8%'
+           }
     }
         
 });

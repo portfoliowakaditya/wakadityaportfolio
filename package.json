@@ -2,7 +2,7 @@
   "name": "wakadityaportfolio",
   "version": "1.0.0",
   "description": "",
-    "homepage": "https://portfoliowakaditya.github.io/wakadityaportfolio/",
+  "homepage": "https://portfoliowakaditya.github.io/wakadityaportfolio/",
   "main": "dist/index.js",
   "scripts": {
     "start": "webpack-dev-server --config ./webpack.config.js --mode development",
@@ -44,6 +44,7 @@
     "react-typist": "^2.0.4",
     "react-validation": "^3.0.7",
     "reactstrap": "^6.0.1",
+    "simple-react-pdf": "^1.0.9",
     "url-loader": "^1.0.1",
     "validator": "^10.4.0",
     "webpack": "^4.0.1",

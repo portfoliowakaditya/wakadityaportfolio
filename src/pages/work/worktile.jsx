@@ -177,7 +177,7 @@ export class Worktile extends React.Component {
         
         return (
 
-           <Grid className = {css(styles.contain)} bsClass = 'responsive'>
+           <Grid className = {css(styles.contain)} >
                 
                 
                 
@@ -185,7 +185,7 @@ export class Worktile extends React.Component {
                      <Col xs={6} sm={6} md={6} lg={4} style = {uberback} onMouseOut={() => {this.setState({ uberstate: css(styles.hochide) })}} onMouseEnter={() => {this.setState({uberstate: css(styles.uber) })}}>
                     
                     
-                    <div className = {this.state.uberstate} onMouseEnter={() => {this.setState({uberstate: css(styles.uber) })}} onMouseOut={() => {this.setState({ uberstate: css(styles.hochide) })}}> 
+                    <div className = {this.state.uberstate} onMouseEnter={() => {this.setState({uberstate: css(styles.uber) })}} onMouseOut={() => {this.setState({ uberstate: css(styles.uber) })}}> 
                         <p onMouseEnter={() => {this.setState({uberstate: css(styles.uber) })}} onMouseOut={() => {this.setState({ uberstate: css(styles.uber) })}}> Risk Analytics </p> <p className = {this.state.tf} onMouseEnter={() => {this.setState({uberstate: css(styles.uber) })}} onMouseOut={() => {this.setState({ uberstate: css(styles.uber) })}}> Wokring with the Risk Team at Uber Inc. to mitigate Payment Fraud. </p> </div>
                          
                      <p className = {css(styles.leftsub)}> Summer 2018 | <font className = {css(styles.rightsub)}> Experential Learning: Internship  </font> </p> 
@@ -230,10 +230,22 @@ export class Worktile extends React.Component {
                
                     <Col xs={6} sm={6} md={6} lg={4} style = {f570back} onMouseOut={() => {this.setState({ fstate: css(styles.hochide) })}} onMouseEnter={() => {this.setState({fstate: css(styles.f570) })}}>
                     
-                    <Link to = '/alz' className = {css(styles.text)}>
-                    <div className = {this.state.fstate} onMouseEnter={() => {this.setState({fstate: css(styles.f570) })}} onMouseOut={() => {this.setState({ fstate: css(styles.f570) })}}> <p onMouseEnter={() => {this.setState({fstate: css(styles.f570) })}} onMouseOut={() => {this.setState({ fstate: css(styles.f570) })}}> User Research </p> <p className = {this.state.tf} onMouseEnter={() => {this.setState({fstate: css(styles.f570) })}} onMouseOut={() => {this.setState({ fstate: css(styles.f570) })}}> Understanding the ethical and usability concerns of assistive technology for caregivers & patients.  </p> </div>
-                     <p className = {css(styles.leftsub)}> Fall 2017 | <font className = {css(styles.rightsub)}> Exploring Assistive Technology for Alzheimer's Patients. </font> </p> 
-                        </Link>
+                   
+                    <div className = {this.state.fstate} onMouseEnter={() => {this.setState({fstate: css(styles.f570) })}} onMouseOut={() => {this.setState({ fstate: css(styles.f570) })}}> 
+                        
+                        <p onMouseEnter={() => {this.setState({fstate: css(styles.f570) })}} onMouseOut={() => {this.setState({ fstate: css(styles.f570) })}}>  <Link to = '/alz' className = {css(styles.text)}>User Research  </Link> </p> 
+                            
+                                                     
+                             <p className = {this.state.tf} onMouseEnter={() => {this.setState({fstate: css(styles.f570) })}} onMouseOut={() => {this.setState({ fstate: css(styles.f570) })}}> 
+                                  <Link to = '/alz' className = {css(styles.text)}>
+                       Understanding the ethical and usability concerns of assistive technology for caregivers & patients.   </Link>
+                            </p> 
+                                                            
+                            
+                             </div>
+                         
+                     <p className = {css(styles.leftsub)}> Fall 2017 | <font className = {css(styles.rightsub)}> Exploring Assistive Technology for Alzheimer's Patients.  </font> </p>
+                       
                      
                     
                 </Col>
@@ -265,11 +277,11 @@ const styles = StyleSheet.create({
         align:'middle',
         textAlign: 'center',
        display: 'block',
-        paddingLeft: '13em',
         paddingTop: '4rem',
         paddingBottom: '10rem',
+        paddingLeft: '0',
+        paddingRight: '0',
         '@media only screen and (max-width: 1080px)': {
-            paddingLeft: '16.5%',
             textAlign: 'center',
             align: 'center',
             verticalAlign: 'center'
@@ -293,6 +305,7 @@ const styles = StyleSheet.create({
     padding: '3rem',
     height: '100%',
     width: '100%',
+        fontSize: '0',
         opacity: '0',
     boxSizing: 'inherit'
     },
@@ -415,6 +428,7 @@ const styles = StyleSheet.create({
         paddingBottom: '4rem'
     },
     text: {
-        textDecoration: 'none'
+        textDecoration: 'None',
+        color: '#ffffff'
     }
-}); 
+});
