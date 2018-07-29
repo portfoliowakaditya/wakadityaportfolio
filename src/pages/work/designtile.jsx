@@ -30,6 +30,9 @@ import {Grid, Row, Col} from 'react-bootstrap';
 
                 </Row>
                 
+                      
+    
+      
                 
             <Row className = {css(styles.invert)}>
                 
@@ -119,6 +122,51 @@ import {Grid, Row, Col} from 'react-bootstrap';
                 
                 </Row>
                 
+                
+                
+            <p className = {css(styles.titlestat)}> <img src = {require('../../resources/work/tools.png')} height = '5%' width='5%'/> <span/><span/>Tools Used 
+         
+
+         
+         </p>            
+        <Row className = {css(styles.row3)} bsClass = 'container-fluid'>
+         
+
+         
+                                    <Col xs={4} sm={4} md={4} lg={4}>
+                    <p className = {css(styles.number)}>
+                        <a href = "https://www.google.com/search#q=reactjs" target="_blank"> <img src={require('../../resources/work/react.png')} height = '100vu' width='100vu' /> </a>
+                        </p>
+                    <p className = {css(styles.numsub)}>
+                       React for Front End Engineering.         
+                    </p>
+                        
+                        
+                    </Col>
+                                                  <Col xs={4} sm={4} md={4} lg={4}>
+                    <p className = {css(styles.number)}>
+                        <a href = "https://www.google.com/search#q=firebase" target="_blank"> <img src={require('../../resources/work/firebase.png')} height = '100vu' width='100vu' /> </a>
+                        </p>
+                    <p className = {css(styles.numsub)}>
+                       Firebase as backend database.          
+                    </p>
+                        
+                        
+                    </Col>
+                                                  <Col xs={4} sm={4} md={4} lg={4}>
+                    <p className = {css(styles.number)}>
+                        <a href = "https://www.google.com/search#q=adobe+creative+suite" target="_blank">  <img src={require('../../resources/work/creativecloud.png')} height = '100vu' width='100vu' /></a>
+                        </p>
+                    <p className = {css(styles.numsub)}>
+                       Adobe creative suite for graphics & prototyping.             
+                    </p>
+                        
+                        
+                    </Col>
+     
+     </Row>
+     
+    
                 
                 
             </Grid>
@@ -314,6 +362,46 @@ const styles = StyleSheet.create({
     invert: {
         paddingTop: '3rem',
         paddingBottom: '4rem'
-    }
+    },
+        row3: {
+        backgroundColor: '#eafc40',
+        textAlign: 'center',
+        align: 'middle',
+        padding: '3rem',
+        margin: '0',
+        border: '0',
+        paddingBottom: '4rem',
+        '@media only screen and (max-width: 1080px)':{
+        paddingBottom: '5rem',
+            paddingTop: '0rem' }
+    },
+        numsub:{
+        fontSize: '2.5rem',
+        '@media only screen and (max-width: 1080px)':{
+            fontSize: '2rem'},
+        paddingLeft: '2rem',
+        paddingRight: '2rem',
+        textAlign: 'center'
+    },
+        number: {
+        paddingTop: '4rem',
+        textAlign: 'center',
+        fontSize: '5rem'
+    },
+                titlestat: {
+                textAlign:'center',
+            lineHeight: '3rem',
+        paddingTop: '10rem',
+            paddingBottom: '5rem',
+        marginTop:'0',
+                    paddingLeft: '0',
+                    paddingRight:'0',
+                    all: 'revert',
+        backgroundColor: '#ffffff',
+        fontSize: '4rem',
+        '@media only screen and (max-width: 1080px)':{
+            paddingTop: '4rem',
+            paddingBottom: '4rem',
+            fontSize: '5rem'}}
     });
             

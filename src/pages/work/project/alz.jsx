@@ -23,6 +23,14 @@ var sectionStyle = {
 
 
 export class Alz extends React.Component {
+        componentDidUpdate() {
+  window.scrollTo(0,0);
+}
+    componentDidMount() {
+        
+          window.scrollTo(0,0);
+    }
+    
 	render() {
 		return (
             <div className = {css(styles.foots)}>
@@ -352,7 +360,7 @@ Design technology that somehow replicates memories from their youth, e.g. some p
                     <br/>
                                 
               <li>
-Considering Age and Race as a factor. Assistive technology should be configurable or should have inexpensive alternative for patients of different ages and races. We found that Ethics and Age / Race have a relation to the severity of the disease. Different versions of technology which ensure optimal level of empathy, reasoning, expectation and enforcement for the patients, will prove to be more effective.
+Considering Age and Race as a factor.                                    Assistive technology should be configurable or should have inexpensive alternative for patients of different ages and races. We found that Ethics and Age / Race have a relation to the severity of the disease. Different versions of technology which ensure optimal level of empathy, reasoning, expectation and enforcement for the patients, will prove to be more effective.
 
 
             </li>
@@ -539,17 +547,7 @@ const styles = StyleSheet.create({
         paddingRight: '2rem',
         textAlign: 'center'
     },
-    back: {
-        padding: '2rem',
-        color: '#1c2329',
-        backgroundColor: '#1ed2f4',
-        opacity: '0.8',
-        boxShadow: '2px 4px 6px #000000'
-    },
-    center: {
-        padding: '0',
-        margin: '0'
-    },
+
         block1: {
      backgroundColor: '#1ed2f4',
      color: '#1ed2f4',

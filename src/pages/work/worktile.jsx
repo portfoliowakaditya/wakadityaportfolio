@@ -208,7 +208,8 @@ export class Worktile extends React.Component {
                 <Col xs={6} sm={6} md={6} lg={4} style = {hocback} onMouseOut={() => {this.setState({ hocstate: css(styles.hochide) })}} onMouseEnter={() => {this.setState({hocstate: css(styles.hoc) })}}>
                     
                     
-                    <div className = {this.state.hocstate} onMouseEnter={() => {this.setState({hocstate: css(styles.hoc) })}} onMouseOut={() => {this.setState({ hocstate: css(styles.hoc) })}}> <p onMouseEnter={() => {this.setState({hocstate: css(styles.hoc) })}} onMouseOut={() => {this.setState({ hocstate: css(styles.hoc) })}}> UX Design </p> <p className = {this.state.tf} onMouseEnter={() => {this.setState({hocstate: css(styles.hoc) })}} onMouseOut={() => {this.setState({ hocstate: css(styles.hoc) })}}> Applying design methods to the Hour of Code initiative, for improving the way kids learn to code!  </p> </div>
+                    <div className = {this.state.hocstate} onMouseEnter={() => {this.setState({hocstate: css(styles.hoc) })}} onMouseOut={() => {this.setState({ hocstate: css(styles.hoc) })}}> 
+                    <Link to = '/hoc' className = {css(styles.text)}>      <p onMouseEnter={() => {this.setState({hocstate: css(styles.hoc) })}} onMouseOut={() => {this.setState({ hocstate: css(styles.hoc) })}}> UX Design </p> </Link>  <Link to = '/hoc' className = {css(styles.text)}>  <p className = {this.state.tf} onMouseEnter={() => {this.setState({hocstate: css(styles.hoc) })}} onMouseOut={() => {this.setState({ hocstate: css(styles.hoc) })}}> Applying design methods to the Hour of Code initiative, for improving the way kids learn to code!  </p></Link>  </div>
                     
                     <p className = {css(styles.leftsub)}>Winter 2018 | <font className = {css(styles.rightsub)}>Redesigning a Visual Programming Interface</font> </p> 
                     
@@ -220,7 +221,8 @@ export class Worktile extends React.Component {
                 <Col xs={6} sm={6} md={6} lg={4} style = {fomcback} onMouseOut={() => {this.setState({ fomcstate: css(styles.hochide) })}} onMouseEnter={() => {this.setState({fomcstate: css(styles.fomc) })}}>
                     
                     
-                    <div className = {this.state.fomcstate} onMouseEnter={() => {this.setState({fomcstate: css(styles.fomc) })}} onMouseOut={() => {this.setState({ fomcstate: css(styles.fomc) })}}> <p onMouseEnter={() => {this.setState({fomcstate: css(styles.fomc) })}} onMouseOut={() => {this.setState({ fomcstate: css(styles.fomc) })}}> Data Science </p> <p className = {this.state.tf} onMouseEnter={() => {this.setState({fomcstate: css(styles.fomc) })}} onMouseOut={() => {this.setState({ fomcstate: css(styles.fomc) })}}> Developing strategies to improve sales, by analyzing the transaction logs data of customer orders. </p> </div>
+                    <div className = {this.state.fomcstate} onMouseEnter={() => {this.setState({fomcstate: css(styles.fomc) })}} onMouseOut={() => {this.setState({ fomcstate: css(styles.fomc) })}}>
+                         <Link to = '/fomc' className = {css(styles.text)}> <p onMouseEnter={() => {this.setState({fomcstate: css(styles.fomc) })}} onMouseOut={() => {this.setState({ fomcstate: css(styles.fomc) })}}> Data Science </p> </Link>  <Link to = '/fomc' className = {css(styles.text)}>  <p className = {this.state.tf} onMouseEnter={() => {this.setState({fomcstate: css(styles.fomc) })}} onMouseOut={() => {this.setState({ fomcstate: css(styles.fomc) })}}> Developing strategies to improve sales, by analyzing the transaction logs data of customer orders. </p> </Link>  </div>
                          <p className = {css(styles.leftsub)}>Winter 2018 | <font className = {css(styles.rightsub)}> Sales Analytics in Ecommerce </font> </p> 
                      
                 </Col>
@@ -232,14 +234,14 @@ export class Worktile extends React.Component {
                     
                    
                     <div className = {this.state.fstate} onMouseEnter={() => {this.setState({fstate: css(styles.f570) })}} onMouseOut={() => {this.setState({ fstate: css(styles.f570) })}}> 
-                        
-                        <p onMouseEnter={() => {this.setState({fstate: css(styles.f570) })}} onMouseOut={() => {this.setState({ fstate: css(styles.f570) })}}>  <Link to = '/alz' className = {css(styles.text)}>User Research  </Link> </p> 
+                        <Link to = '/alz' className = {css(styles.text)}>
+                        <p onMouseEnter={() => {this.setState({fstate: css(styles.f570) })}} onMouseOut={() => {this.setState({ fstate: css(styles.f570) })}}>  User Research   </p> </Link>
                             
-                                                     
+                               <Link to = '/alz' className = {css(styles.text)}>                       
                              <p className = {this.state.tf} onMouseEnter={() => {this.setState({fstate: css(styles.f570) })}} onMouseOut={() => {this.setState({ fstate: css(styles.f570) })}}> 
-                                  <Link to = '/alz' className = {css(styles.text)}>
-                       Understanding the ethical and usability concerns of assistive technology for caregivers & patients.   </Link>
-                            </p> 
+                                 
+                       Understanding the ethical and usability concerns of assistive technology for caregivers & patients.  
+                            </p>  </Link>
                                                             
                             
                              </div>
@@ -254,7 +256,12 @@ export class Worktile extends React.Component {
                 <Col xs={6} sm={6} md={6} lg={4} style = {beprojback} onMouseOut={() => {this.setState({ bestate: css(styles.hochide) })}} onMouseEnter={() => {this.setState({bestate: css(styles.beproj) })}}>
                     
                     
-                    <div className = {this.state.bestate} onMouseEnter={() => {this.setState({bestate: css(styles.beproj) })}} onMouseOut={() => {this.setState({ bestate: css(styles.beproj) })}}> <p onMouseEnter={() => {this.setState({bestate: css(styles.beproj) })}} onMouseOut={() => {this.setState({ bestate: css(styles.beproj) })}}> UI Design </p> <p className = {this.state.tf} onMouseEnter={() => {this.setState({bestate: css(styles.beproj) })}} onMouseOut={() => {this.setState({ bestate: css(styles.beproj) })}}> Translating user requirements, content organizations and backend analytics into seamless interfaces. </p> </div>
+                    <div className = {this.state.bestate} onMouseEnter={() => {this.setState({bestate: css(styles.beproj) })}} onMouseOut={() => {this.setState({ bestate: css(styles.beproj) })}}>
+                        <Link to = '/uidesign' className = {css(styles.text)}>
+                        <p onMouseEnter={() => {this.setState({bestate: css(styles.beproj) })}} onMouseOut={() => {this.setState({ bestate: css(styles.beproj) })}}> UI Design </p> </Link>
+                        
+                          <Link to = '/uidesign' className = {css(styles.text)}>
+                        <p className = {this.state.tf} onMouseEnter={() => {this.setState({bestate: css(styles.beproj) })}} onMouseOut={() => {this.setState({ bestate: css(styles.beproj) })}}> Translating user requirements, content organizations and backend analytics into seamless interfaces. </p> </Link>  </div>
                      <p className = {css(styles.leftsub)}> Summer 2017 | <font className = {css(styles.rightsub)}> User Interface design and development </font> </p> 
                     
                     
