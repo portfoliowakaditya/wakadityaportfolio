@@ -5,6 +5,8 @@ import {Alz} from './pages/work/project/alz.jsx';
 import {Uid} from './pages/work/project/uidesign.jsx';
 import {Ds} from './pages/work/project/ds.jsx';
 import {Hoc} from './pages/work/project/hoc.jsx';
+import {Drg} from './pages/work/project/drg.jsx';
+import {Ubr} from './pages/work/project/ubr.jsx';
 import { Aboutme } from './pages/about me.jsx';
 import { Contactme } from './pages/contact me.jsx';
 import { myblog } from './pages/blog.jsx';
@@ -39,10 +41,12 @@ class App extends React.Component {
                     <Route path='/contactme' component={Contactme}/>
                     <Route exact path='/' component={Work}/>
                     <Route path='/blog' component={myblog}/>
+                 <Route path='/drg' component={Drg}/>
                     <Route path='/alz' component={Alz}  onUpdate={() => window.scrollTo(0, 0)} />
                     <Route path='/uidesign' component={Uid}  onUpdate={() => window.scrollTo(0, 0)} />
                     <Route path='/fomc' component={Ds}  onUpdate={() => window.scrollTo(0, 0)} />
                     <Route path='/hoc' component={Hoc}  onUpdate={() => window.scrollTo(0, 0)} />
+              <Route path='/ubr' component={Ubr}  onUpdate={() => window.scrollTo(0, 0)} />
                     
                 </Switch>
 			</HashRouter>

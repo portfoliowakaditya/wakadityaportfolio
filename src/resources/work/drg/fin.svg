@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 288 192" style="enable-background:new 0 0 288 192;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#CCCCCC;}
+	.st1{fill:#FFFFFF;stroke:#000000;stroke-miterlimit:10;}
+	.st2{font-family:'MyriadPro-Regular';}
+	.st3{font-size:12px;}
+</style>
+<rect x="-308" class="st0" width="288" height="192"/>
+<rect x="-189" y="121.9" class="st1" width="82.5" height="35.5"/>
+<rect x="-106.5" y="121.9" class="st1" width="60" height="30.5"/>
+<rect x="-143.9" y="0.8" class="st1" width="29.5" height="61"/>
+<rect x="-66.8" y="0.8" class="st1" width="29.5" height="61"/>
+<rect x="-222.9" y="8" class="st1" width="55" height="22"/>
+<rect x="-252.2" y="0.8" class="st1" width="29.3" height="29.3"/>
+<polygon class="st1" points="-203.1,78.1 -236.8,48.2 -241.4,32.4 -225.1,35.2 -191.5,65.1 "/>
+<rect x="-300.6" y="69.7" transform="matrix(0.9659 0.2588 -0.2588 0.9659 16.2053 77.4016)" class="st1" width="29.5" height="61"/>
+<rect x="-291.7" y="35.3" transform="matrix(0.9659 0.2588 -0.2588 0.9659 4.3923 72.699)" class="st1" width="35.5" height="35.5"/>
+<text transform="matrix(1 0 0 1 -135.1667 34.2917)" class="st2 st3">S1</text>
+<text transform="matrix(1 0 0 1 -57.75 36.5833)" class="st2 st3">S2</text>
+<text transform="matrix(1 0 0 1 -158.0833 143.2917)" class="st2 st3">WB1</text>
+<text transform="matrix(1 0 0 1 -88.1664 139.667)" class="st2 st3">WB2</text>
+<text transform="matrix(1 0 0 1 -244.2083 19.2083)" class="st2 st3">TS</text>
+<text transform="matrix(1 0 0 1 -200.5833 23.3333)" class="st2 st3">IM</text>
+<text transform="matrix(1 0 0 1 -219 59.5589)" class="st2 st3">IB</text>
+<text transform="matrix(1 0 0 1 -283.6704 56.4891)" class="st2 st3">CS2</text>
+<text transform="matrix(1 0 0 1 -295.8332 109.4584)" class="st2 st3">CS1</text>
+<rect y="0" class="st0" width="288" height="192"/>
+<g>
+	<rect x="81.3" y="-0.2" class="st1" width="29.5" height="61"/>
+	<text transform="matrix(1 0 0 1 90.0833 33.2917)" class="st2 st3">S1</text>
+</g>
+<g>
+	<rect x="148.3" y="-0.5" class="st1" width="29.5" height="61"/>
+	<text transform="matrix(1 0 0 1 157.3336 35.3333)" class="st2 st3">S2</text>
+</g>
+<g>
+	<rect x="88" y="124.4" class="st1" width="60" height="30.5"/>
+	<text transform="matrix(1 0 0 1 106.3336 142.1673)" class="st2 st3">WB2</text>
+</g>
+<g>
+	
+		<rect x="3.3" y="56.3" transform="matrix(-0.2588 0.9659 -0.9659 -0.2588 91.0733 72.0026)" class="st1" width="29.3" height="29.3"/>
+	<text transform="matrix(1 0 0 1 9.9561 73.6493)" class="st2 st3">TSS</text>
+</g>
+<g>
+	<g>
+		<rect x="1.4" y="19" transform="matrix(-0.2588 0.9659 -0.9659 -0.2588 65.3618 9.9295)" class="st1" width="55" height="22"/>
+	</g>
+	<text transform="matrix(1 0 0 1 20.5872 34.418)" class="st2 st3">IMS</text>
+</g>
+<g>
+	<polygon class="st1" points="82.5,145.9 37.5,145.9 23.5,137.2 37.5,128.4 82.5,128.4 	"/>
+	<text transform="matrix(1 0 0 1 54.7662 140.3566)" class="st2 st3">IBS</text>
+</g>
+<g>
+	<rect x="243.9" y="-0.2" class="st1" width="29.5" height="61"/>
+</g>
+<g>
+	
+		<rect x="229.5" y="45" transform="matrix(6.123234e-17 -1 1 6.123234e-17 168.6667 319.75)" class="st1" width="29.5" height="61"/>
+</g>
+<g>
+	<rect x="213.4" y="-0.6" class="st1" width="29.5" height="61"/>
+	<text transform="matrix(1 0 0 1 233.1667 77.9166)" class="st2 st3">CS1</text>
+</g>
+</svg>

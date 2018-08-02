@@ -419,6 +419,13 @@ const styles = StyleSheet.create({
         padding: '0',
         margin: '0'
     },
+        back: {
+        padding: '2rem',
+        color: '#1c2329',
+        backgroundColor: '#1ed2f4',
+        opacity: '0.8',
+        boxShadow: '2px 4px 6px #000000'
+    },
     header: {
         paddingTop: '6rem',
         fontSize: '7rem',
@@ -701,6 +708,19 @@ const styles = StyleSheet.create({
            '@media only screen and (max-width: 1300px)': {
            paddingLeft: '8%'
            }
+    },
+            number: {
+        paddingTop: '4rem',
+        textAlign: 'center',
+        fontSize: '5rem'
+    },
+            numsub:{
+        fontSize: '2.5rem',
+        '@media only screen and (max-width: 1080px)':{
+            fontSize: '2rem'},
+        paddingLeft: '2rem',
+        paddingRight: '2rem',
+        textAlign: 'center'
     }
        
     

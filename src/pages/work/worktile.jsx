@@ -186,7 +186,15 @@ export class Worktile extends React.Component {
                     
                     
                     <div className = {this.state.uberstate} onMouseEnter={() => {this.setState({uberstate: css(styles.uber) })}} onMouseOut={() => {this.setState({ uberstate: css(styles.uber) })}}> 
-                        <p onMouseEnter={() => {this.setState({uberstate: css(styles.uber) })}} onMouseOut={() => {this.setState({ uberstate: css(styles.uber) })}}> Risk Analytics </p> <p className = {this.state.tf} onMouseEnter={() => {this.setState({uberstate: css(styles.uber) })}} onMouseOut={() => {this.setState({ uberstate: css(styles.uber) })}}> Wokring with the Risk Team at Uber Inc. to mitigate Payment Fraud. </p> </div>
+                          <Link to = '/ubr' className = {css(styles.text)}> 
+                        <p onMouseEnter={() => {this.setState({uberstate: css(styles.uber) })}} onMouseOut={() => {this.setState({ uberstate: css(styles.uber) })}}> Risk Analytics </p> 
+                                                </Link>
+                            
+                               <Link to = '/ubr' className = {css(styles.text)}>  
+                        
+                        <p className = {this.state.tf} onMouseEnter={() => {this.setState({uberstate: css(styles.uber) })}} onMouseOut={() => {this.setState({ uberstate: css(styles.uber) })}}> Wokring with the Risk Team at Uber Inc. to mitigate Payment Fraud. </p>
+                                 </Link>   
+                                   </div>
                          
                      <p className = {css(styles.leftsub)}> Summer 2018 | <font className = {css(styles.rightsub)}> Experential Learning: Internship  </font> </p> 
                     
@@ -197,7 +205,15 @@ export class Worktile extends React.Component {
                                 <Col xs={6} sm={6} md={6} lg={4} style = {qdcback} onMouseOut={() => {this.setState({ qdcstate: css(styles.hochide) })}} onMouseEnter={() => {this.setState({qdcstate: css(styles.qdc) })}}>
                     
                     
-                    <div className = {this.state.qdcstate} onMouseEnter={() => {this.setState({qdcstate: css(styles.qdc) })}} onMouseOut={() => {this.setState({ qdcstate: css(styles.qdc) })}}> <p onMouseEnter={() => {this.setState({qdcstate: css(styles.qdc) })}} onMouseOut={() => {this.setState({ qdcstate: css(styles.qdc) })}}> UX Research </p> <p className = {this.state.tf} onMouseEnter={() => {this.setState({qdcstate: css(styles.qdc) })}} onMouseOut={() => {this.setState({ qdcstate: css(styles.qdc) })}}> Exploring a unique design space at the UW Co-motion MakerSpace, using CoDesign.  </p> </div>
+                    <div className = {this.state.qdcstate} onMouseEnter={() => {this.setState({qdcstate: css(styles.qdc) })}} onMouseOut={() => {this.setState({ qdcstate: css(styles.qdc) })}}> 
+                         <Link to = '/drg' className = {css(styles.text)}> 
+                        <p onMouseEnter={() => {this.setState({qdcstate: css(styles.qdc) })}} onMouseOut={() => {this.setState({ qdcstate: css(styles.qdc) })}}> UX Research </p>
+                        </Link>
+                            
+                               <Link to = '/drg' className = {css(styles.text)}>  
+                        <p className = {this.state.tf} onMouseEnter={() => {this.setState({qdcstate: css(styles.qdc) })}} onMouseOut={() => {this.setState({ qdcstate: css(styles.qdc) })}}> Exploring a unique design space at the UW Co-motion MakerSpace, using CoDesign.  </p> 
+                                       </Link>
+                                   </div>
                       <p className = {css(styles.leftsub)}>Spring 2018 | <font className = {css(styles.rightsub)}> Directed Research: Intro to Sewing Workshop </font> </p> 
                     
                     

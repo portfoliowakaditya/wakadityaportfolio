@@ -32,7 +32,7 @@ var image = {
       height: '390',
       width: '640',
       playerVars: { // https://developers.google.com/youtube/player_parameters
-        autoplay: 1
+        autoplay: 0
       }}
 
 export class Hoc extends React.Component {
@@ -719,7 +719,7 @@ alignItems: 'center'
                 titlestat: {
                 textAlign:'center',
             lineHeight: '3rem',
-        paddingTop: '5rem',
+        paddingTop: '5rem', 
             paddingBottom: '5rem',
         marginTop:'0',
         backgroundColor: '#ffffff',

@@ -77,7 +77,7 @@ export class Uid extends React.Component {
               <p className = {css(styles.titlestat)}> <img src = {require('../../../resources/work/tools.png')} height = '5%' width='5%'/> <span/><span/>Tools Used 
          
 
-         
+        
          </p>
          
      
@@ -622,7 +622,7 @@ alignItems: 'center'
         paddingTop: '5rem',
         '@media only screen and (max-width: 1080px)':{
         paddingBottom: '5rem',
-            paddingTop: '0rem' }
+            paddingTop: '5rem' }
     },
                 titlestat: {
                 textAlign:'center',
