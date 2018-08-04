@@ -22,7 +22,7 @@ import {Grid, Row, Col} from 'react-bootstrap';
                 
                 <Col  xs={12} sm={12} md={9} lg={9} className = {css(styles.title)}>
                     <font>
-                My design process heavily relies on Qualitative & Quantitative Data collection and analysis. I like to develop high fidelity prototypes and incorporate front end engineering, as early as possible, in the process. I love to translate the mental models of the user has in a design space, into creative visual components. This portfolio is a product of my design process, which consists of the following phases.
+                My design process heavily relies on both Qualitative & Quantitative Data collection and analysis. I like to develop high fidelity prototypes and incorporate front end engineering, as early as possible, in the process. My uniqueness is my ability to imagine the engineering behind my mockups while designing. This portfolio is a product of my design process, which consists of the following phases.
                 </font>
                         </Col>
                 

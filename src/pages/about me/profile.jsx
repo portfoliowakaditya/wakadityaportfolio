@@ -16,7 +16,7 @@ export class Profile extends React.Component {
            
              <div>
                 <img align = "center" className="morph pic" bsClass = "img-responsive" src = {this.state.img} 
-                    onMouseEnter={() => {this.setState({img: require('../../resources/flip.jpg') })}}
+                    onMouseEnter={() => {this.setState({img: require('../../resources/work/waldo.png') })}}
                     onMouseOut={() => {this.setState({ img: require('../../resources/about_photo.jpg') })}} />
             </div>
         
