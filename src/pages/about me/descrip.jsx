@@ -15,7 +15,7 @@ export class Descrip extends React.Component {
            
          <Jumbotron bsClass = "fluid" >
                 <p className = {css(styles.title)}> (^_^)_/ Hello. </p>
-      <p align = "justify" className = {css(styles.subtitle)}> I develop designs, visualizations and analyses for converting into insights. I love learning about new businesses and technologies.  When I'm not working, I'm playing/ listening to music, following standup comedy, attending meetups or watching documentaries. Feel free to contact me. I would love to discuss anything about my work or interests with you. </p>
+      <p align = "justify" className = {css(styles.subtitle)}> I develop designs, visualizations and analyses for converting data into insights. I love learning about new businesses and technologies.  When I'm not working, I'm playing/ listening to music, following standup comedy, attending meetups or watching documentaries. Feel free to contact me. I would love to discuss anything about my work or interests with you. </p>
     
         <Typist avgTypingDelay = {0} stdTypingDelay = {1} cursor = {{show: false}}>
     <font className = {css(styles.block1)}>textttxttxtextrtrtrttexttexttextrtrtrtt </font> <font className = {css(styles.block2)}>ttettttrtrtrttextxtextxtt </font> <font className = {css(styles.block3)}>txtxxexextx </font>
