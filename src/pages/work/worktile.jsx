@@ -192,7 +192,7 @@ export class Worktile extends React.Component {
                             
                                <Link to = '/ubr' className = {css(styles.text)}>  
                         
-                        <p className = {this.state.tf} onMouseEnter={() => {this.setState({uberstate: css(styles.uber) })}} onMouseOut={() => {this.setState({ uberstate: css(styles.uber) })}}> Wokring with the Risk Team at Uber Inc. to mitigate Payment Fraud. </p>
+                        <p className = {this.state.tf} onMouseEnter={() => {this.setState({uberstate: css(styles.uber) })}} onMouseOut={() => {this.setState({ uberstate: css(styles.uber) })}}> Working with the Risk Team at Uber Inc. to mitigate Payment Fraud. </p>
                                  </Link>   
                                    </div>
                          
