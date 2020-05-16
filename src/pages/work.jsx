@@ -52,7 +52,7 @@ export class Work extends React.Component {
                     <Typist avgTypingDelay = {0} stdTypingDelay = {1} cursor = {{show: false}}>
                     <font className = {css(styles.block1)}>textttxttxtextrtrtrtrtrtrtt </font> <font className = {css(styles.block2)}>ttettttrtrtrttxtt </font> <font className = {css(styles.block3)}>txtxxxxxtx </font>
                             </Typist>
-                            <p className={css(styles.subtitle)}>   I am an aspiring <b>UX Researcher/ Designer</b>, having experience in Web Development, Data Science and Software Engineering. With a diverse perspective towards software and data systems, I aim to design information experiences which are interdisciplinary, to bridge the gap between customers, business and engineering.
+                            <p className={css(styles.subtitle)}>   I am an aspiring <b>Data Scientist</b>, having experience in Web Development, Data Science and Software Engineering. With a diverse perspective towards software and data systems, I aim to design information experiences which are interdisciplinary, to bridge the gap between customers, business and engineering.
                             </p>
                     </Col>
                             </Row>
